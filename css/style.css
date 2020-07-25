@@ -1,0 +1,178 @@
+body {
+  font-family: "Nunito",serif;
+  background-color: #000;
+}
+
+/* loader */
+.loader-wrapper,.loader-container {
+  z-index: 10;
+  height: 100vh;
+}
+
+.loader {
+  z-index: 10;
+  width: 10vh;
+  height: 10vh;
+}
+
+/* navbar */
+.text-white {
+  color: #fff;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+.nav-item {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.nav-brand {
+  border: 0;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* about */
+.card-img {
+  height: 100%;
+}
+
+.about-card {
+  border: 0px;
+  background-color: #000;
+}
+
+#about .card-title{
+  font-size: 5em;
+  text-align: center;
+}
+
+.typing-1 {
+  animation: typing-1 .7s steps(4);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 2px solid #000;
+  width: 4ch;
+}
+@keyframes typing-1 {
+  from {width: 0ch;border-color: #fff;}
+  to {width: 4ch;border-color: #fff;}
+}
+
+.typing-2 {
+  animation: typing-2 1.9s steps(11);
+  animation-delay: .9s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 2px solid #000;
+  width: 11ch;
+  visibility: hidden;
+}
+@keyframes typing-2 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 11ch;border-color: #fff 0;visibility: visible;}
+}
+
+.typing-3 {
+  animation: typing-3 2.5s steps(14);
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 2px solid #000;
+  width: 14ch;
+  visibility: hidden;
+}
+@keyframes typing-3 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 14ch;border-color: #fff 0;visibility: visible;}
+}
+
+.typing-4 {
+  animation: typing-4 2.6s steps(18);
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 2px solid #000;
+  width: 18ch;
+  visibility: hidden;
+}
+@keyframes typing-4 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 18ch;border-color: #fff 0;visibility: visible;}
+}
+
+.typing-5 {
+  animation: typing-5 2.6s steps(18);
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 2px solid #000;
+  width: 18ch;
+  visibility: hidden;
+}
+@keyframes typing-5 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 18ch;border-color: #fff 0;visibility: visible;}
+}
+
+.typing-6 {
+  animation: typing-6 2.6s steps(15);
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 2px solid #000;
+  width: 15ch;
+  visibility: hidden;
+}
+@keyframes typing-6 {
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 15ch;border-color: #fff 0;visibility: visible;}
+}
+
+
+
+@media all and (min-width:425px) {
+  .nav-link {
+    margin: 0 3vw;
+  }
+}
+@media all and (min-width:768px) {
+  .nav-link {
+    margin: 0 4vw;
+    font-size: 1.3rem;
+  }
+  .nav-brand {
+    margin: 0 2vw 0 3vw;
+  }
+}
+@media all and (min-width:1200px) {
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .nav-brand {
+    margin: 0 2vw 0 2vw;
+  }
+  .typing h3 {
+    font-size: 2rem;
+  }
+  .typing h4 {
+    font-size: 1.5rem;
+  }
+}
