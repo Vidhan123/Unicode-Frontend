@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-  background-color: #000;
+  background: linear-gradient(rgba(10,10,10,1),rgba(10,10,10,0.5))
 }
 
 .nav-item {
@@ -34,7 +34,7 @@ body {
 }
 
 .nav-link {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 1rem;
 }
 
@@ -48,102 +48,119 @@ body {
   background-color: #000;
 }
 
-#about .card-title{
+.card-title{
   font-size: 5em;
   text-align: center;
 }
 
-.typing-1 {
-  animation: typing-1 .7s steps(4);
+.typing h3,.typing h4 {
   overflow: hidden;
   white-space: nowrap;
-  font-family: consolas;
   border-right: 2px solid #000;
-  width: 4ch;
+  font-family: 'Times New Roman', Times, serif;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.typing-1 {
+  animation: typing-1 .7s steps(3);
+  width: 3ch;
 }
 @keyframes typing-1 {
-  from {width: 0ch;border-color: #fff;}
-  to {width: 4ch;border-color: #fff;}
+  from {width: 0ch;border-color: #fff;visibility: visible;}
+  to {width: 3ch;border-color: #fff 0;visibility: visible;}
 }
 
 .typing-2 {
-  animation: typing-2 1.9s steps(11);
+  animation: typing-2 1.9s steps(10);
   animation-delay: .9s;
-  animation-fill-mode: forwards;
-  overflow: hidden;
-  white-space: nowrap;
-  font-family: consolas;
-  border-right: 2px solid #000;
-  width: 11ch;
-  visibility: hidden;
+  width: 10ch;
 }
 @keyframes typing-2 {
   from {width: 0ch;border-color: #fff;visibility: visible;}
-  to {width: 11ch;border-color: #fff 0;visibility: visible;}
+  to {width: 10ch;border-color: #fff 0;visibility: visible;}
 }
 
 .typing-3 {
-  animation: typing-3 2.5s steps(14);
+  animation: typing-3 2.5s steps(13);
   animation-delay: 3s;
-  animation-fill-mode: forwards;
-  overflow: hidden;
-  white-space: nowrap;
-  font-family: consolas;
-  border-right: 2px solid #000;
-  width: 14ch;
-  visibility: hidden;
+  width: 13ch;
 }
 @keyframes typing-3 {
   from {width: 0ch;border-color: #fff;visibility: visible;}
-  to {width: 14ch;border-color: #fff 0;visibility: visible;}
+  to {width: 13ch;border-color: #fff 0;visibility: visible;}
 }
 
 .typing-4 {
-  animation: typing-4 2.6s steps(18);
+  animation: typing-4 2.6s steps(16);
   animation-delay: 6s;
-  animation-fill-mode: forwards;
-  overflow: hidden;
-  white-space: nowrap;
-  font-family: consolas;
-  border-right: 2px solid #000;
-  width: 18ch;
-  visibility: hidden;
+  width: 16ch;
 }
 @keyframes typing-4 {
   from {width: 0ch;border-color: #fff;visibility: visible;}
-  to {width: 18ch;border-color: #fff 0;visibility: visible;}
+  to {width: 16ch;border-color: #fff 0;visibility: visible;}
 }
 
 .typing-5 {
-  animation: typing-5 2.6s steps(18);
+  animation: typing-5 2.6s steps(15);
   animation-delay: 9s;
-  animation-fill-mode: forwards;
-  overflow: hidden;
-  white-space: nowrap;
-  font-family: consolas;
-  border-right: 2px solid #000;
-  width: 18ch;
-  visibility: hidden;
+  width: 15ch;
 }
 @keyframes typing-5 {
   from {width: 0ch;border-color: #fff;visibility: visible;}
-  to {width: 18ch;border-color: #fff 0;visibility: visible;}
+  to {width: 15ch;border-color: #fff 0;visibility: visible;}
 }
 
 .typing-6 {
-  animation: typing-6 2.6s steps(15);
+  animation: typing-6 2.6s steps(13);
   animation-delay: 12s;
-  animation-fill-mode: forwards;
-  overflow: hidden;
-  white-space: nowrap;
-  font-family: consolas;
-  border-right: 2px solid #000;
-  width: 15ch;
-  visibility: hidden;
+  width: 13ch;
 }
 @keyframes typing-6 {
   from {width: 0ch;border-color: #fff;visibility: visible;}
-  to {width: 15ch;border-color: #fff 0;visibility: visible;}
+  to {width: 13ch;border-color: #fff 0;visibility: visible;}
+}
+
+/* skills */
+.changing {
+  display: inline-block;
+}
+.changing span {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  animation: change 6s linear infinite;
+  opacity: 0;
+}
+@keyframes change {
+  from {opacity: 0;transform: translateX(-50px);}
+  10% {opacity: 1;transform: translateX(0px);}
+  20% {opacity: 1;transform: translateX(0px);}
+  30% {opacity: 0;transform: translateX(50px);}
+  to {opacity: 0;transform: translateX(50px);}
+}
+.changing span:nth-child(1)
+{
+  animation-delay: 0s;
+}
+.changing span:nth-child(2)
+{
+  animation-delay: 2s;
+}
+.changing span:nth-child(3)
+{
+  animation-delay: 4s;
+}
+
+.cursor {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  animation: blink 1.06s step-end infinite;
+}
+@keyframes blink {
+  from,to {color: transparent;}
+  50% {color: #fff;}
 }
 
 
