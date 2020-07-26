@@ -16,10 +16,6 @@ body {
 }
 
 /* navbar */
-.text-white {
-  color: #fff;
-}
-
 .navbar {
   background: linear-gradient(rgba(10,10,10,1),rgba(10,10,10,0.5))
 }
@@ -163,6 +159,33 @@ body {
   50% {color: #fff;}
 }
 
+/* work */
+.bg-black {
+  background-color: #000;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.card-link {
+  font-size: 1.3rem;
+}
+
+#jp {
+  animation: dance 5s infinite;
+}
+#ms {
+  animation: dance 5s infinite;
+  animation-delay: 2.5s;
+}
+@keyframes dance {
+  from,to {transform: rotateY(0deg);border: 1px solid;}
+  50% {transform: rotateY(180deg);border: 0px;}
+}
+
+
 
 
 @media all and (min-width:425px) {
@@ -191,5 +214,8 @@ body {
   }
   .typing h4 {
     font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 1.3rem;
   }
 }
