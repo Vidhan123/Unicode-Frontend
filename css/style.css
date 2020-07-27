@@ -174,16 +174,25 @@ body {
 }
 
 #jp {
-  animation: dance 5s infinite;
+  animation: flip 5s infinite;
 }
 #ms {
-  animation: dance 5s infinite;
+  animation: flip 5s infinite;
   animation-delay: 2.5s;
 }
-@keyframes dance {
+@keyframes flip {
   from,to {transform: rotateY(0deg);border: 1px solid;}
-  50% {transform: rotateY(180deg);border: 0px;}
+  50% {transform: rotateY(180deg);border: 1px solid #000;}
 }
+
+/* projects  */
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: invert(100%);
+  border-radius: 1rem;
+}
+
+
+
 
 
 

@@ -40,7 +40,6 @@
   <div class="container-fluid bg-light loader-container">
     <div class="row align-items-center justify-content-center loader-wrapper">
       <div class="spinner-grow text-dark loader" role="status">
-        <span class="sr-only">Loading...</span>
       </div>
     </div>
   </div>
@@ -55,7 +54,7 @@
           <a class="nav-link text-white" href="#">skills</a>
         </li>
         <li class="nav-item d-none d-md-block nav-brand">
-            <img src="img/logo.png" height=90 width=90>
+            <img src="img/logo.png" height=90 width=90 alt="logo">
         </li>
         <li class="nav-item my-auto">
           <a class="nav-link text-white" href="#">work</a>
@@ -73,7 +72,7 @@
     </div>
     <div class="row justify-content-center align-items-center">
       <div class="col-12 col-md-6 col-lg-4">
-        <img class="img-fluid" src="img/about.jpg">
+        <img class="img-fluid" src="img/about.jpg" alt="aboutimg">
       </div>
       <div class="col-12 col-md-6 col-lg-4 typing">
         <h3 class="typing-1 text-white">Hi,</h3>
@@ -93,7 +92,7 @@
     </div>
     <div class="row justify-content-center align-items-center">
       <div class="col-12 col-md-6 col-lg-4 order-md-last">
-        <img class="img-fluid" src="img/skills.jpg">
+        <img class="img-fluid" src="img/skills.jpg" alt="skillsimg">
       </div>
       <div class="col-12 col-md-6 col-lg-4">
         <h2 class="text-white changing">
@@ -143,7 +142,63 @@
   </div>
 
   <!-- projects -->
+  <div class="container-fluid" id="projects">
+    <div class="row justify-content-center mb-md-5 mt-lg-5">
+      <h5 class="card-title text-white">projects</h5>
+    </div>
+    <div class="row justify-content-center websites">
+    <!-- For md-xl screen sizes -->
+      <div class="d-none d-md-block col-md-10 col-lg-8">
+        <div class="bd-example">
+          <div id="myTarget" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myTarget" data-slide-to="0" class="active"></li>
+              <li data-target="#myTarget" data-slide-to="1"></li>
+              <li data-target="#myTarget" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="#" target="_blank">
+                  <img src="img/avengers.jpg" class="d-block w-100" alt="website1img">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Static Website</h5>
+                  <p>Display pages, COVID-19 tracker and a Quiz application using Bootstrap, React, and WebGL.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#" target="_blank">
+                  <img src="img/avengers.jpg" class="d-block w-100" alt="website1img">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Static Website</h5>
+                  <p>Display pages, COVID-19 tracker and a Quiz application using Bootstrap, React, and WebGL.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="#" target="_blank">
+                  <img src="img/avengers.jpg" class="d-block w-100" alt="website1img">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Static Website</h5>
+                  <p>Display pages, COVID-19 tracker and a Quiz application using Bootstrap, React, and WebGL.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#myTarget" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#myTarget" role="button" data-slide="next">
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    <!-- For smaller screen sizes -->
 
+
+    </div>  
+  </div>
 
 </body>
 </html>
