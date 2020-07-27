@@ -17,7 +17,6 @@
   <script src="js/jquery.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
   
   <!-- loader -->
 	<script>
@@ -48,19 +47,19 @@
   <nav class="navbar navbar-expand sticky-top">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item my-auto">
-          <a class="nav-link text-white" href="#">about</a>
+          <a class="nav-link text-white" href="#about">about</a>
         </li>
         <li class="nav-item my-auto">
-          <a class="nav-link text-white" href="#">skills</a>
+          <a class="nav-link text-white" href="#skills">skills</a>
         </li>
         <li class="nav-item d-none d-md-block nav-brand">
             <img src="img/logo.png" height=90 width=90 alt="logo">
         </li>
         <li class="nav-item my-auto">
-          <a class="nav-link text-white" href="#">work</a>
+          <a class="nav-link text-white" href="#work">work</a>
         </li>
         <li class="nav-item my-auto">
-          <a class="nav-link text-white" href="#">projects</a>
+          <a class="nav-link text-white" href="#projects">projects</a>
         </li>
       </ul>
   </nav>
@@ -86,7 +85,7 @@
   </div>
 
   <!-- skills   -->
-  <div class="container-fluid mt-md-2" id="skills">
+  <div class="container-fluid mt-2" id="skills">
     <div class="row justify-content-center">
       <h5 class="card-title text-white">skills</h5>
     </div>
@@ -108,7 +107,7 @@
 
   <!-- work -->
   <div class="container-fluid mt-lg-4" id="work">
-    <div class="row justify-content-center mb-md-5">
+    <div class="row justify-content-center mb-4">
       <h5 class="card-title text-white">work</h5>
     </div>
     <div class="row justify-content-center align-items-top">
@@ -142,11 +141,12 @@
   </div>
 
   <!-- projects -->
-  <div class="container-fluid" id="projects">
-    <div class="row justify-content-center mb-md-5 mt-lg-5">
+  <div class="container-fluid mt-2 mt-lg-4" id="projects">
+    <div class="row justify-content-center mb-4">
       <h5 class="card-title text-white">projects</h5>
     </div>
     <div class="row justify-content-center websites">
+
     <!-- For md-xl screen sizes -->
       <div class="d-none d-md-block col-md-10 col-lg-8">
         <div class="bd-example">
@@ -195,10 +195,104 @@
         </div>
       </div>
     <!-- For smaller screen sizes -->
-
+      <div class="d-md-none">
+        <div id="targetCard" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card bg-black text-white">
+                <img src="img/avengers.jpg" class="card-img-top" alt="website1img">
+                <div class="card-body">
+                  <h5 class="card-title">Static Website</h5>
+                  <p class="card-text">Display pages, COVID-19 tracker and a Quiz application using Bootstrap, React, and WebGL.</p>
+                  <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card bg-black text-white">
+                <img src="img/avengers.jpg" class="card-img-top" alt="website1img">
+                <div class="card-body">
+                  <h5 class="card-title">Static Website</h5>
+                  <p class="card-text">Display pages, COVID-19 tracker and a Quiz application using Bootstrap, React, and WebGL.</p>
+                  <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card bg-black text-white">
+                <img src="img/avengers.jpg" class="card-img-top" alt="website1img">
+                <div class="card-body">
+                  <h5 class="card-title">Static Website</h5>
+                  <p class="card-text">Display pages, COVID-19 tracker and a Quiz application using Bootstrap, React, and WebGL.</p>
+                  <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#targetCard" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#targetCard" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
 
     </div>  
   </div>
 
+  <!-- footer -->
+  <div class="container-fluid mt-2 mt-md-4" id="footer">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-5 col-md-4">
+        <hr>
+      </div>
+      <div class="col-2">
+        <img src="img/logo.png" alt="logo" class="img-fluid">
+      </div>
+      <div class="col-5 col-md-4">
+        <hr>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center mb-md-2 mb-lg-3 mb-xl-5">
+      <div class="col-4">
+        <div class="row justify-content-center align-items-center">
+          <a href="#" class="btn-stylish" download="Vidhan Shah Resume">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Resume
+          </a>
+        </div>
+      </div>
+      <div class="col-2">
+        &nbsp;
+      </div>
+      <div class="col-4">
+        <div class="row justify-content-center align-items-center">
+          <a href="contact.html" class="btn-stylish">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-end">
+      <div class="col-2 col-md-3">
+        <hr>
+      </div>
+      <div class="col-8 col-md-4">
+        <h6 class="footerText">Vidhan Shah &copy; 2020</h6>
+      </div>
+      <div class="col-2 col-md-3">
+        <hr>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
