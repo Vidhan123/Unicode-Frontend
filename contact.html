@@ -64,22 +64,30 @@
       <h5 class="bg-white err" id="blankErr">Please fill all the required fields*</h5>
     </div>
     <div class="row justify-content-center align-items-center mt-2">
-      <form onsubmit="return validate()">
-        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Full Name" id="name">
+      <form class="gform" onsubmit="return validate()" method="POST" action="https://script.google.com/macros/s/AKfycbwy6fJoPbSxDCkYMfWm56h6P-afNBLn9ZlNLvYkxig5OiMfrE0/exec">
+        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Full Name" id="name" name="name">
         <h5 class="bg-white err" id="nameErr">Invalid Name</h5>
 
-        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Email Address*" id="email">
+        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Email Address*" id="email" name="email">
         <h5 class="bg-white err" id="emailErr">Invalid Email Address</h5>
 
-        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Phone Number" id="number">
+        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Phone Number" id="number" name="number">
         <h5 class="bg-white err" id="numberErr">Invalid Phone Number</h5>
 
-        <textarea class="form-control form-control-lg bg-dark text-white" id="message" rows="4" placeholder="Message*"></textarea>
+        <textarea class="form-control form-control-lg bg-dark text-white" id="message" rows="4" placeholder="Message*" name="message"></textarea>
         <br>
-        <button type="submit" class="btn btn-outline-light w-100 mt-lg-3">Send A Message</button>
+        <button type="submit" class="btn btn-outline-light w-100 mt-lg-3" id="button">Send A Message</button>
+
+        <!-- after submit -->
+        <div style="display:none" class="thankyou_message">
+          <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+          </h2>
+        </div>
+
       </form>
     </div>
   </div>
 
+  <!-- <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script> -->
 </body>
 </html>

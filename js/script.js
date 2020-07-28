@@ -3,13 +3,19 @@ function validate() {
   const email = document.getElementById("email");
   const number = document.getElementById("number");
   const message = document.getElementById("message");
+  const btn = document.getElementById("button")
   
   const blankErr = document.getElementById("blankErr");
   const nameErr = document.getElementById("nameErr");
   const emailErr = document.getElementById("emailErr");
   const numberErr = document.getElementById("numberErr");
 
-  let b, n, e, num;
+  blankErr.style.visibility="hidden";
+  nameErr.style.visibility="hidden";
+  emailErr.style.visibility="hidden";
+  numberErr.style.visibility="hidden";
+
+  let b=1, n=1, e=1, num=1;
 
   const nameCheck = /^[a-zA-Z ]+$/;
   const emailCheck = /^([a-zA-Z0-9._-]+)@([a-zA-Z0-9.-]+).([a-zA-Z]+)(.[a-zA-Z]{2,8})?$/;
@@ -58,6 +64,8 @@ function validate() {
     return false
   }
   else {
+    btn.innerHTML="Message Sent";
+    window.location.reload(true);
     return true
   };
 }
