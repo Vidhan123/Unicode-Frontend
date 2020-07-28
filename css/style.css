@@ -285,6 +285,31 @@ body {
   text-align: center;
 }
 
+/* form */
+.breadcrumb {
+  background: linear-gradient(rgba(10,10,10,1),rgba(10,10,10,0.5));
+  font-size: 1.5rem;  
+}
+
+#form h1 {
+  font-size: 3rem;
+}
+
+#form .btn-stylish {
+  height: max-content;
+}
+
+.err {
+  animation: colorChange 1.2s  infinite;
+  text-align: center;
+  border-radius: 0.2rem;
+  visibility: hidden;
+}
+@keyframes colorChange {
+  from {background-color: #ffffff;color: #000000;}
+  to {background-color: #000000;color: #ffffff;}
+}
+
 /* media queries */
 @media all and (min-width:425px) {
   .nav-link {

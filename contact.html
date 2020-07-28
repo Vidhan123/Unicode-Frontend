@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Vidhan Shah | Contact Me</title>
+    <link rel="icon" href="img/logo.png">
+  
+    <!-- font -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito">
+  
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!-- scripts -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- loader -->
+    <script>
+      $('html, body').css({
+        'overflow': 'hidden',
+        'height': '100%'
+        });
+      $(window).on("load",function(){
+        $(".loader-container").css("display","none");
+        $('html, body').css({
+        'height': 'auto'
+        });
+        $('html, body').css({'overflow':''});
+      });
+    </script>
+    
+  </head>
+<body>
+  <!-- loader -->
+  <div class="container-fluid bg-light loader-container">
+    <div class="row align-items-center justify-content-center loader-wrapper">
+      <div class="spinner-grow text-dark loader" role="status">
+      </div>
+    </div>
+  </div>
+
+  <!-- nav -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">contact me</li>
+      <li class="breadcrumb-logo ml-auto">
+        <img src="img/logo.png" height=30 width=30 alt="logo">
+      </li>
+    </ol>
+  </nav>
+
+  <!-- main form -->
+  <div class="container" id="form">
+    <div class="row justify-content-center align-items-center mt-3">
+      <h1 class="text-white">contact me</h1>
+    </div>
+    <div class="row justify-content-center align-items-center mt-lg-2">
+      <h5 class="bg-white err" id="blankErr">Please fill all the required fields*</h5>
+    </div>
+    <div class="row justify-content-center align-items-center mt-2">
+      <form onsubmit="return validate()">
+        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Full Name" id="name">
+        <h5 class="bg-white err" id="nameErr">Invalid Name</h5>
+
+        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Email Address*" id="email">
+        <h5 class="bg-white err" id="emailErr">Invalid Email Address</h5>
+
+        <input class="form-control form-control-lg bg-dark text-white" type="text" placeholder="Phone Number" id="number">
+        <h5 class="bg-white err" id="numberErr">Invalid Phone Number</h5>
+
+        <textarea class="form-control form-control-lg bg-dark text-white" id="message" rows="4" placeholder="Message*"></textarea>
+        <br>
+        <button type="submit" class="btn btn-outline-light w-100 mt-lg-3">Send A Message</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
