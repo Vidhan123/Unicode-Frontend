@@ -15,32 +15,53 @@
 </head>
 <body>
 
-  <!-- graph -->
+  <!-- summary -->
   <div class="container-fluid mt-5">
-
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-md-4 col-lg-3 layered mb-3 mb-md-0">
+        <div class="card bg-confirm">
+          <h5 class="confirmed">Confirmed</h5>
+          <h6 id="NC-label" class="confirmed"></h6>
+          <h4 id="TC-label" class="confirmed"></h4>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 layered mb-3 mb-md-0">
+        <div class="card bg-deceased">
+          <h5 class="deceased">Deceased</h5>   
+          <h6 id="ND-label" class="deceased"></h6>
+          <h4 id="TD-label" class="deceased"></h4>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 layered">
+        <div class="card bg-recovered">
+          <h5 class="recovered">Recovered</h5>
+          <h6 id="NR-label" class="recovered"></h6>
+          <h4 id="TR-label" class="recovered"></h4>
+        </div>
+      </div>
+    </div>
   </div>
-
 
   <!-- table -->
   <div class="container-fluid mt-5">
     <div class="row justify-content-center align-items-center">
       <div class="col-12 col-lg-10 col-xl-9">
         <div class="table-responsive">
-          <table class="table table-hover table-striped table-sortable" id="mainTable">
+          <table class="table table-hover table-striped" id="mainTable">
             <thead>
               <tr>
-                <th rowspan="2" id="mainHead" class="bg-gray sort">Countries and territories</th>
+                <th rowspan="2" id="mainHead" class="bg-gray">Countries and territories</th>
                 <th colspan="2" class="bg-gray">Confirmed</th>
                 <th colspan="2" class="bg-gray">Deceased</th>
                 <th colspan="2" class="bg-gray">Recovered</th>
               </tr>
               <tr>
-                <th class="table-danger sort">Total Cases</th>
-                <th class="table-danger sort">New Cases</th>
-                <th class="table-secondary sort">Total Deaths</th>
-                <th class="table-secondary sort">New Deaths</th>
-                <th class="table-success sort">Total Recoveries</th>
-                <th class="table-success sort">New Recoveries</th>
+                <th class="table-danger">Total Cases</th>
+                <th class="table-danger">New Cases</th>
+                <th class="table-secondary">Total Deaths</th>
+                <th class="table-secondary">New Deaths</th>
+                <th class="table-success">Total Recoveries</th>
+                <th class="table-success">New Recoveries</th>
               </tr>
             </thead>
             <tbody id="tableBody">

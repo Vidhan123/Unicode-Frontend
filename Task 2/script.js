@@ -56,5 +56,12 @@ function createTable(d) {
       + '<td>' + TR + '</td>'
       + '<td>' + NR + '</td>';
   mainContainer.appendChild(last);
+
+  document.getElementById('NC-label').innerHTML= '+' + NC;
+  document.getElementById('TC-label').innerHTML=TC;
+  document.getElementById('ND-label').innerHTML= '+' + ND;
+  document.getElementById('TD-label').innerHTML=TD;
+  document.getElementById('NR-label').innerHTML= '+' + NR;
+  document.getElementById('TR-label').innerHTML=TR;
 };
 
