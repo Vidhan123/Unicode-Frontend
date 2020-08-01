@@ -7,10 +7,14 @@ Contains Portfolio website with a 'Contact Me' page, COVID-19 tracker and a Quiz
 3. COVID-19 tracker: Displays the stats related to COVID-19 from various countries by making API calls.
 3. Marvelite (Quiz app): A simple quiz app made with React.
 
-## Installation
+## Build Instructions
+
+For Quiz App
 
 ```bash
-npm install create-react-app
+cd marvelite
+npm install
+npm start
 ```
 
 ## Screenshots
