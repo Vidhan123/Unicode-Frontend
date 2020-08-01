@@ -23,26 +23,38 @@ function Questions(props) {
   const myQuestions = data.map(data => {
     return (
       <React.Fragment key={data.id}>
-        <h1>Question: {data.question}</h1>
-        
-        <img className="img-fluid" src={data.image} alt="displayImage" />
-        <br />
-        <div className="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="o1" name="options" value={data.options[0]} className="custom-control-input" onChange={handleChange}/>
-        <label className="custom-control-label" htmlFor="o1">{data.options[0]}</label>
-        </div>
-        <div className="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="o2" name="options" value={data.options[1]} className="custom-control-input" onChange={handleChange}/>
-        <label className="custom-control-label" htmlFor="o2">{data.options[1]}</label>
-        </div>
-        <br />
-        <div className="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="o3" name="options" value={data.options[2]} className="custom-control-input" onChange={handleChange}/>
-        <label className="custom-control-label" htmlFor="o3">{data.options[2]}</label>
-        </div>
-        <div className="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="o4" name="options" value={data.options[3]} className="custom-control-input" onChange={handleChange} />
-        <label className="custom-control-label" htmlFor="o4">{data.options[3]}</label>
+        <div className="container-fluid mt-3">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-12 col-md-6 col-lg-5 col-xl-4">
+              <div className="card" id="questions">
+                <img className="card-img-top" src={data.image} alt="displayImage" />
+                <div className="card-body">
+                <h5 className="card-title">{data.question}</h5>
+                </div>
+              </div>
+              <div className="card mt-3" id="options">
+                <div className="class-body">
+                <p className="card-text">Select your answer<span className="required"> *</span></p>
+                <div className="custom-control custom-radio">
+                <input type="radio" id="o1" name="options" value={data.options[0]} className="custom-control-input" onChange={handleChange}/>
+                <label className="custom-control-label" htmlFor="o1">{data.options[0]}</label>
+                </div>
+                <div className="custom-control custom-radio">
+                <input type="radio" id="o2" name="options" value={data.options[1]} className="custom-control-input" onChange={handleChange}/>
+                <label className="custom-control-label" htmlFor="o2">{data.options[1]}</label>
+                </div>
+                <div className="custom-control custom-radio">
+                <input type="radio" id="o3" name="options" value={data.options[2]} className="custom-control-input" onChange={handleChange}/>
+                <label className="custom-control-label" htmlFor="o3">{data.options[2]}</label>
+                </div>
+                <div className="custom-control custom-radio">
+                <input type="radio" id="o4" name="options" value={data.options[3]} className="custom-control-input" onChange={handleChange} />
+                <label className="custom-control-label" htmlFor="o4">{data.options[3]}</label>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </React.Fragment>
     )
@@ -51,7 +63,13 @@ function Questions(props) {
   return(
     <div>
       {myQuestions[qId]}
-      <button onClick={forward} disabled={isDisabled}>Next</button>
+      <div className="container-fluid mt-3">
+        <div className="row justify-content-center align-items-center">
+          <div className="col-12 col-md-6 col-lg-5 col-xl-4">
+            <button className="btn" onClick={forward} disabled={isDisabled}>Next</button>
+          </div>
+        </div>
+      </div>
     </div>
   )
 };

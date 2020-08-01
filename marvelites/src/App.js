@@ -2,12 +2,11 @@ import React from 'react';
 import './App.css';
 import MarveliteApp from './components/MarveliteApp';
 
-function App() {
-  
+function App() {  
   return(
-    <div className="myApp">
+    <React.Fragment>
       <MarveliteApp />
-    </div>
+    </React.Fragment>
   );
 }
 
