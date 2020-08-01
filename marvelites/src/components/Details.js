@@ -3,13 +3,13 @@ import React from 'react';
 function Details(props) {
   const {values,setName} = props;
 
-  function forward(e) {
+  const forward = (e) => {
     e.preventDefault();
     props.nextStep();
   };
 
   return (
-    <div className="container-fluid mt-3">
+    <div className="container-fluid mt-3 mb-5">
       <div className="row justify-content-center align-items-center">
         <div className="col-12 col-md-6 col-lg-5 col-xl-4">
           <div className="card" id="top">
@@ -29,8 +29,7 @@ function Details(props) {
             </div>
           </div>
           <br />
-          <button className="btn" onClick={forward} disabled={values.name.length>0?false:true}>Let's Start</button>
-          
+          <button className="btn" onClick={forward} disabled={values.name.trim().length>0?false:true}>Let's Start</button>
         </div>
       </div>
     </div>
