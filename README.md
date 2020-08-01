@@ -45,4 +45,4 @@ npm install create-react-app
 
 #### Analysis
 
-<img src="screenshots/quizAnalysis">
+<img src="screenshots/quizAnalysis.png">
