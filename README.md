@@ -12,7 +12,7 @@ Contains Portfolio website with a 'Contact Me' page, COVID-19 tracker and a Quiz
 For Quiz App
 
 ```bash
-cd marvelite
+cd marvelites
 npm install
 npm start
 ```
